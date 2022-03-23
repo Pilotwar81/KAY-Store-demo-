@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Document</title>
+    <link rel="stylesheet" href=" Random Photo .css">
+    <script src="https://kit.fontawesome.com/dd8c49730d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<link rel="stylesheet" href="css/stylesheet.css">
+
+
+<body>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+      <a class="navbar-brand" href="https://linktr.ee/CodeQuest">Yehia islam </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../my projects .html"> my projects </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../our team .html">my future projects </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../contact us .html">contact me</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  <div class="container">
+<center>
+       <font style="color:rgb(15, 47, 228);font-size:40px;">
+           Random Photo
+           </font>
+     </center>
+
+
+    <div id="curve" class="card">
+        <div class="footer">
+
+            <svg id="curve">
+
+                <!-- slide up-->
+                <animate xlink:href="#p" attributeName="d" to="M0,50 Q80,100 400,50 V150 H0 V50" fill="freeze"
+                    begin="dummyRect.mouseover" end="dummyRect.mouseout" dur="0.1s" id="bounce1" />
+                <!-- slide up and curve in -->
+                <animate xlink:href="#p" attributeName="d" to="M0,50 Q80,0 400,50 V150 H0 V50" fill="freeze"
+                    begin="bounce1.end" end="dummyRect.mouseout" dur="0.15s" id="bounce2" />
+                <!-- slide down and curve in -->
+                <animate xlink:href="#p" attributeName="d" to="M0,50 Q80,80 400,50 V150 H0 V50" fill="freeze"
+                    begin="bounce2.end" end="dummyRect.mouseout" dur="0.15s" id="bounce3" />
+                <!-- slide down and curve out -->
+                <animate xlink:href="#p" attributeName="d" to="M0,50 Q80,45 400,50 V150 H0 V50" fill="freeze"
+                    begin="bounce3.end" end="dummyRect.mouseout" dur="0.1s" id="bounce4" />
+                <!-- curve in -->
+                <animate xlink:href="#p" attributeName="d" to="M0,50 Q80,50 400,50 V150 H0 V50" fill="freeze"
+                    begin="bounce4.end" end="dummyRect.mouseout" dur="0.05s" id="bounce5" />
+
+                <animate xlink:href="#p" attributeName="d" to="M0,200 Q80,100 400,200 V150 H0 V50" fill="freeze"
+                    begin="dummyRect.mouseout" dur="0.15s" id="bounceOut" />
+            </svg>
+            <font style="color:#EADEDE;font-size:30px;">
+            <div class="info">
+                <div class="name"> Random Photo  </div>
+            </div>
+        </div>
+        <div class="card-blur"></div>
+    </div>
+     <center>
+       <font style="color:rgb(15, 47, 228);font-size:20px">
+           Another Random Photo
+           </font> 
+       <button onclick=location=URL>Refresh</button>
+      </center>
+    </div>
+  </div>
+ </body>
+</html>

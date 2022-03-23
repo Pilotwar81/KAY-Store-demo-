@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
+body {
+  height:100vh;
+  overflow: hidden;
+}
+.disappear {
+  position: absolute;
+  left:0;
+  right:0;
+  margin: auto;
+  width:100%;
+  text-align: center;
+  height:fit-content;
+  bottom:0;
+  top:0;
+  font-size:60px;
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+
+}
+.disappear span {
+  display: inline-block;
+  color:transparent;
+  text-shadow: 0px 0px 0px black;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+.disappear span:nth-child(1){
+  animation-name: disappearleft;
+}
+.disappear span:nth-child(2){
+  animation-name: disappearleft;
+  animation-delay: .3s;
+}
+.disappear span:nth-child(3){
+  animation-name: disappearight;
+  animation-delay: .6s;
+}
+.disappear span:nth-child(4){
+  animation-name: disappearleft;
+  animation-delay: .8s;
+}
+.disappear span:nth-child(5){
+  animation-name: disappearight;
+  animation-delay: 1s;
+}
+.disappear span:nth-child(6){
+  animation-name: disappearight;
+  animation-delay: 1.3s;
+}
+.disappear span:nth-child(7){
+  animation-name: disappearleft;
+  animation-delay: 1.6s;
+}
+.disappear span:nth-child(8){
+  animation-name: disappearight;
+  animation-delay: 2s;
+}
+.disappear span:nth-child(9){
+  animation-name: disappearight;
+  animation-delay: 2.3s;
+}
+@keyframes disappearleft{
+  50% {transform: skew(50deg) translateY(-200%);
+      text-shadow: 0px 0px 50px;
+        opacity: 0;
+  }
+}
+@keyframes disappearight{
+  50% {transform: skew(-50deg) translateY(-200%);
+      text-shadow: 0px 0px 50px;
+        opacity: 0;
+  }
+}
