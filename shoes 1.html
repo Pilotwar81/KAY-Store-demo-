@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+       <head>
+        <script src="js/script.js"></script>
+        <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+        <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=Ddevice-width, initial-scale=1.0">
+        <link rel="stylesheet" href="font-awesome/css/font-awesome.css">
+        <link rel="stylesheet" href="css/style.css">
+        <title>K.A.Y Store</title>
+    </head>
+    <style>
+     model-viewer {
+    height: 600px;
+    width: 1280px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: none;
+    }
+
+    </style>
+<body>
+    <header>
+        <div id="menu-bar" class="fa fa-bars"></div>
+        <a href="#" class="logo">K.A.Y Store</a>
+        <nav class="navbar">
+            <a href="index.html#home">Home</a>
+        </nav>
+    </header>
+    <div id="aSide">
+
+        <!-- 3D objsect -->
+        <!-- This inserts the 3D object inside the aside container -->
+        <model-viewer src="scene.gltf" alt="shoes" auto-rotate camera-controls ar ios-src="scene.gltf">
+        </model-viewer>
+    </div>
+
+
+    </body>
+</html>
