@@ -526,8 +526,8 @@ section{
   width: 100%;
   padding:12px;
   font-size: 17px;
-  background: #000000;
-  color:rgb(0, 0, 0);
+  background: #a8a7a7;
+  color:rgb(255, 254, 254);
   margin-top: 5px;
   cursor: pointer;
 }
